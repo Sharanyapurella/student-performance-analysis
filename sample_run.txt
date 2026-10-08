@@ -1,0 +1,70 @@
+
+===== STUDENT PERFORMANCE ANALYSIS =====
+
+First 5 records:
+   Student_ID  Study_Hours  ...  Sleep_Hours  Final_Marks
+0           1          2.0  ...          7.0           58
+1           2          3.5  ...          7.5           76
+2           3          1.5  ...          6.0           51
+3           4          4.0  ...          8.0           87
+4           5          2.5  ...          7.0           67
+
+[5 rows x 7 columns]
+
+Dataset shape: (30, 7)
+
+Missing values:
+Student_ID            0
+Study_Hours           0
+Attendance_Percent    0
+Previous_Marks        0
+Assignment_Score      0
+Sleep_Hours           0
+Final_Marks           0
+dtype: int64
+
+Basic statistics:
+       Student_ID  Study_Hours  ...  Sleep_Hours  Final_Marks
+count   30.000000    30.000000  ...    30.000000    30.000000
+mean    15.500000     3.110000  ...     7.216667    72.800000
+std      8.803408     1.197512  ...     0.827161    14.793755
+min      1.000000     1.000000  ...     6.000000    47.000000
+25%      8.250000     2.050000  ...     6.500000    61.500000
+50%     15.500000     3.150000  ...     7.000000    74.000000
+75%     22.750000     4.000000  ...     8.000000    86.000000
+max     30.000000     5.000000  ...     8.500000    94.000000
+
+[8 rows x 7 columns]
+
+Average values:
+Study_Hours            3.110000
+Attendance_Percent    78.133333
+Previous_Marks        69.000000
+Assignment_Score      73.666667
+Sleep_Hours            7.216667
+Final_Marks           72.800000
+dtype: float64
+
+===== MODEL RESULTS =====
+Mean Absolute Error (MAE): 0.42
+R2 Score: 1.00
+
+===== NEW STUDENT PREDICTION =====
+Enter student details.
+Study hours: Attendance percentage: Previous marks: Assignment score: Sleep hours: 
+Predicted Final Marks: 87.71/100
+Performance level: Good
+
+Graphs saved in the 'outputs' folder.
+Project completed successfully.
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
